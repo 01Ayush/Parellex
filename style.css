@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+}
+body{
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+
+line-height: 1.8em;
+background-color: #666;
+}
+
+.img1{
+    background: url('2.jpg');
+    min-height: 100vh;
+
+}
+.img2{
+    background: url('3.jpg');
+    min-height: 500px;
+}
+.img3{
+    background: url('4.jpg');
+    min-height: 500px;
+}
+.last{
+    background: url('1.jpg');
+    min-height: 800px;
+}
+.img1,.img2, .img3,.last{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    letter-spacing:4px;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+.texbg{
+    background-color: #313534;
+    color: white;
+    padding: 20px;
+    font-weight: 300;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:6vw 4vw;
+    text-align: justify;
+   
+}
+.section h2{
+    font-size: 2rem;
+    padding-bottom: 15px;
+    color: rgb(57, 54, 54);
+    text-transform: uppercase;
+}
+.section-light{
+    background-color: #e3dbdb;
+    color:rgb(22, 21, 21);
+}
+.section-dark{
+    background-color: #595a5a;
+    color: white;
+}
+.section-dark h2{
+    color: white;
+}
+.section-dark p{
+    color: rgb(234, 213, 213);
+}
+
+@media (max-width:415px) {
+    .text {
+        letter-spacing: 1px;
+        font-size: 19px;
+    }
+    .texbg {
+        padding: 10px;
+    }
+}
